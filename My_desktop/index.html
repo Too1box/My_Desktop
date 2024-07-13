@@ -11,8 +11,8 @@
 <body onload="startTime()">
     <div class="container">
         <div class="top">
-            <div id="date">Date</div>
-            <h1>Daniel's Personal Desktop</h1>
+            <div id="date">Hallo</div>
+            <h1>My Personal Desktop</h1>
             <div id="clock"></div>
         </div>
         <div class="main">
@@ -46,7 +46,7 @@
     sp="/"
     today = new Date();
     var dd = today.getDate();
-    var mm = today.getMonth()+1; //As January is 0.
+    var mm = today.getMonth()+1;
     var yyyy = today.getFullYear();
 
     if(dd<10) dd='0'+dd;
@@ -58,5 +58,6 @@
         var currentNotes = $("#note-area").val();
         localStorage.setItem("notes", currentNotes);    
     });
+
 </script>
 </html>
